@@ -156,16 +156,25 @@ namespace Decomp.Core.Operators
             };
         }
 
-        public static IEnumerable<Operator> GetCollection(IEnumerable<IGameVersion> versions) => versions.SelectMany(x => x.GetOperators());
-
-        public static IEnumerable<Operator> GetCollection(Mode m) => m switch
+        public static IEnumerable<Operator> GetCollection(IEnumerable<IGameVersion> versions)
         {
-            Mode.Caribbean => GetCollection(new List<IGameVersion> { new CaribbeanVersion() }),
-            Mode.WarbandScriptEnhancer450 => GetCollection(new List<IGameVersion> { new Warband1171Version(), new WarbandScriptEnhancer450Version() }),
-            Mode.WarbandScriptEnhancer320 => GetCollection(new List<IGameVersion> { new Warband1153Version(), new WarbandScriptEnhancer320Version() }),
-            Mode.Vanilla => GetCollection(new List<IGameVersion> { new VanillaVersion() }),
-            _ => throw new ArgumentOutOfRangeException(nameof(m), m, null),  
-        };
+            return versions.SelectMany(x =>
+            {
+                return x.GetOperators();
+            });
+        }
+
+        public static IEnumerable<Operator> GetCollection(Mode m)
+        {
+            return m switch
+            {
+                Mode.Caribbean => GetCollection(new List<IGameVersion> { new CaribbeanVersion() }),
+                Mode.WarbandScriptEnhancer450 => GetCollection(new List<IGameVersion> { new Warband1171Version(), new WarbandScriptEnhancer450Version() }),
+                Mode.WarbandScriptEnhancer320 => GetCollection(new List<IGameVersion> { new Warband1153Version(), new WarbandScriptEnhancer320Version() }),
+                Mode.Vanilla => GetCollection(new List<IGameVersion> { new VanillaVersion() }),
+                _ => throw new ArgumentOutOfRangeException(nameof(m), m, null),
+            };
+        }
     }
 #pragma warning restore CA1716 // Identifiers should not match keywords
 

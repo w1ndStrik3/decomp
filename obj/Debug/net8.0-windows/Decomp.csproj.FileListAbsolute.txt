@@ -1,0 +1,17 @@
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Languages\English.baml
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Languages\Russian.baml
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\AboutWindow.baml
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\AutoCompleteTextBox.baml
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\CustomContextSystemMenu.baml
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\ErrorWindow.baml
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\HelpWindow.baml
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\Styles\VS2012WindowStyle.baml
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\AboutWindow.g.cs
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\AutoCompleteTextBox.g.cs
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\ErrorWindow.g.cs
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\HelpWindow.g.cs
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\MainWindow.g.cs
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Windows\Styles\VS2012WindowStyle.g.cs
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Decomp_MarkupCompile.cache
+C:\Users\aleks\source\repos\decomp\obj\Debug\net8.0-windows\Decomp_MarkupCompile.lref

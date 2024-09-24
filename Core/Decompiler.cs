@@ -206,9 +206,16 @@ namespace Decomp.Core
             //Common.Operations = new Dictionary<long, string>();
             //Common.Operators = new Dictionary<int, Operator>();
             var opCodes = new Dictionary<int, Operator>();
-            Window.ModeComboBox.Dispatcher?.Invoke(() => Common.SelectedMode = (Mode)Window.ModeComboBox.SelectedIndex);
+            Window.ModeComboBox.Dispatcher?.Invoke(() =>
+            {
+                return Common.SelectedMode = (Mode)Window.ModeComboBox.SelectedIndex;
+            });
             var operators = Operator.GetCollection(Common.SelectedMode);
-            foreach (var op in operators) opCodes[op.Code] = op;
+            foreach(var op in operators)
+            {
+                opCodes[op.Code] = op;
+            }
+
             Common.Operators = opCodes;
         }
 
